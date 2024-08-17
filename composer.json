@@ -1,6 +1,6 @@
 {
     "name": "qipsius/tcpdf-bundle",
-    "version": "3.0.3",
+    "version": "3.0.5",
     "type": "symfony-bundle",
     "description": "A bundle to easily integrate TCPDF into Symfony",
     "keywords": ["pdf", "tcpdf"],
