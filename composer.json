@@ -1,6 +1,6 @@
 {
     "name": "qipsius/tcpdf-bundle",
-    "version": "3.0.5",
+    "version": "4.0.0",
     "type": "symfony-bundle",
     "description": "A bundle to easily integrate TCPDF into Symfony",
     "keywords": ["pdf", "tcpdf"],
@@ -17,8 +17,8 @@
         }
     ],
     "require": {
-        "php": ">=8.1",
-        "symfony/framework-bundle": ">=6.1",
+        "php": ">=8.4",
+        "symfony/framework-bundle": ">=8.0",
         "tecnickcom/tcpdf": "*"
     },
     "autoload": {
