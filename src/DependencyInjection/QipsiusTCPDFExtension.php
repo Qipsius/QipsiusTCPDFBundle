@@ -5,7 +5,7 @@ namespace Qipsius\TCPDFBundle\DependencyInjection;
 use Exception;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\DependencyInjection\Loader\XMLFileLoader;
+use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 
 class QipsiusTCPDFExtension extends Extension
@@ -24,10 +24,10 @@ class QipsiusTCPDFExtension extends Extension
         $container->setParameter('qipsius_tcpdf.class', $config['class']);
         $container->setParameter('qipsius_tcpdf.tcpdf', $config['tcpdf']);
 
-        $loader = new XMLFileLoader(
+        $loader = new PhpFileLoader(
             $container,
             new FileLocator(__DIR__ . '/../Resources/config')
         );
-        $loader->load('services.xml');
+        $loader->load('services.php');
     }
 }
